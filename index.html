@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONEY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="first" class="text-8xl text-center mt-11">Pocket <span
+                class="text-red-500 font-semibold">Calculator</span></h1>
+    </header>
+    <main class="container mx-auto mt-20 mb-20">
+        <section id="responsive" class="grid grid-cols-2 gap-8">
+            <div>
+                <img style="height: 100%;" src="images/pexels-olia-danilevich-5466806.jpg" alt="">
+            </div>
+            <div class="bg-gray-300 text-center p-5">
+                <!-- income part -->
+                <div>
+                    <h2 class="text-3xl font-bold">Income</h2>
+                    <div class="mt-5">
+                        <h3>Income : &nbsp;&nbsp;&nbsp;<input class="w-3/6 text-center" type="text" name=""
+                                id="income-input" placeholder="Your salary"></h3>
+
+                    </div>
+
+                </div>
+                <!-- Expenses part -->
+                <div>
+                    <h2 class="text-3xl font-bold mt-10">Expenses</h2>
+                    <div class="mt-5">
+                        <h3>Food : &nbsp;&nbsp;&nbsp;<input class="w-3/6 text-center" type="text" name=""
+                                id="food-input" placeholder="Food cost"></h3>
+
+                    </div>
+                    <div class="mt-5">
+                        <h3>Rent : &nbsp;&nbsp;&nbsp;<input class="w-3/6 text-center" type="text" name=""
+                                id="rent-input" placeholder="Rent cost"></h3>
+
+                    </div>
+                    <div class="mt-5">
+                        <h3>Cloth : &nbsp;&nbsp;&nbsp;<input class="w-3/6 text-center" type="text" name=""
+                                id="cloth-input" placeholder="Cloth cost"></h3>
+
+                    </div>
+
+                </div>
+                <!-- Button -->
+                <button id="calculate-btn"
+                    class="bg-blue-500 mt-10 px-5 py-3 text-2xl text-white font-semibold rounded-md">Calculate</button>
+
+                <!-- total expenses -->
+                <div class=" mt-5 ">
+                    <h3 class="font-extrabold">Total Expenses:&nbsp;&nbsp; <span id="total-expenses">00</span>$
+                    </h3>
+
+                </div>
+                <!-- Balance -->
+                <div class=" mt-5 ">
+                    <h3 class="font-extrabold">Balance:&nbsp;&nbsp; <span id="balance">00</span>$
+                    </h3>
+
+                </div>
+                <!-- save percentage -->
+                <div class="mt-10 ">
+                    <div class="flex justify-center items-center">
+                        <h2>Save: &nbsp; <input class="text-center" type="text" name="" id="amount-input"
+                                placeholder="Amount">
+                            &nbsp;
+                            <span>%</span>
+                        </h2>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button id="save-btn"
+                            class="bg-blue-500  px-8 py-1 text-xl text-white font-semibold rounded-md">Save</button>
+                    </div>
+                </div>
+                <!-- Saving Amount AND Remaing Balace -->
+                <div class=" mt-5 ">
+                    <h3 class="font-extrabold">Saving Amount:&nbsp;&nbsp; <span id="saving-amount">00</span>$
+                    </h3>
+
+                </div>
+                <div class=" mt-5 ">
+                    <h3 class="font-extrabold">Remaining Balance:&nbsp;&nbsp; <span id="lastbalance">00</span>$
+                    </h3>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
